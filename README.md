@@ -74,8 +74,9 @@ cscs/
    ```
 
 6. **Admin Login**
-   - Go to: [http://localhost/cscs/admin/](http://localhost/cscs/admin/)
-   - Enter your admin credentials (check your database or setup script for defaults).
+- Go to: [http://localhost/cscs/admin/](http://localhost/cscs/admin/)
+- **Username:** `admin`  
+- **Password:** `admin123`
 
 ## 🧾 Notes
 
@@ -86,10 +87,13 @@ cscs/
 
 ## 🏁 Results
 
-✅ Successfully working Coffee Shop Cashiering System  
-🌐 Runs locally on `http://localhost/cscs/`  
-📦 All features — Admin, Products, Reports, and Billing — are functioning properly.  
-
+🚀 The system allows the coffee shop to:
+- Handle customer orders quickly and accurately  
+- Auto-generate total bills and update stock in real-time  
+- Reduce manual errors and speed up checkout time  
+- Maintain all transaction records digitally  
+📊 The dashboard provides insights on total categories, products, and sales.
+ 
 ## 👩‍💻 Author
 
 **Moulya MC**  
