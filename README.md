@@ -1,97 +1,99 @@
 # ☕ CoffeeShop Cashiering System
 
-A **web-based Point of Sale (POS)** system built to streamline **coffee shop orders, billing, and inventory management**.  
-This project automates manual cashiering tasks, improves transaction speed, and ensures accurate billing.
+A **web-based POS (Point of Sale)** system for managing coffee shop orders, billing, and inventory.  
+It allows admins to handle products, categories, sales, and reports efficiently — all from a browser interface.
 
-## 🧠 Project Overview
-The CoffeeShop Cashiering System is designed to help small cafés or coffee shops efficiently manage:
-- Product listings and categories  
-- Sales and billing operations  
-- Real-time order tracking and inventory updates  
+## 🚀 Features
 
-It features a clean admin dashboard where the cashier or manager can add items, track sales, and view performance insights.
+- 🧍 Admin Login & Dashboard  
+- 🛒 Manage Products, Categories & Inventory  
+- 💵 Process Customer Orders & Billing  
+- 📊 View Daily/Monthly Sales Reports  
+- 🧾 Receipt Generation  
+- 🔐 Secure Authentication System  
+- 🕒 Track Transactions with Date & Time Stamps  
 
-## 🌟 Features
+## 🧰 Tech Stack
 
-✅ **Admin Dashboard** – Central control for categories, products, and sales  
-✅ **Product Management** – Add, edit, delete, and view product items  
-✅ **Category Management** – Organize items under coffee, snacks, etc.  
-✅ **Sales Management** – Create and track each transaction in real time  
-✅ **Automated Billing** – Calculates total amounts instantly  
-✅ **Inventory Control** – Updates stock quantities after each sale  
-✅ **Authentication System** – Secure admin login using PHP sessions  
-✅ **Database Integration** – MySQL database for structured storage  
-✅ **Responsive Design** – Clean UI built with Bootstrap  
+| Category | Technology |
+|-----------|-------------|
+| Frontend | HTML, CSS, JavaScript, Bootstrap |
+| Backend | PHP (v8.0+) |
+| Database | MySQL (v10.4+) |
+| Server | Apache (XAMPP) |
 
-## 🧩 Tech Stack
+## 📂 Project Structure
 
-**Frontend:**  
-🧱 HTML5, CSS3, JavaScript, Bootstrap  
-
-**Backend:**  
-⚙️ PHP (Core PHP), MySQL (phpMyAdmin)  
-
-**Server Environment:**  
-🖥️ Apache via XAMPP  
-
-**Architecture:**  
-📦 MVC-style structure with Object-Oriented PHP  
-
-## 🗂️ Project Structure
-
-    CoffeeShop-Cashiering-System/
-    ├── cscs/
-    │   ├── admin/          # Admin panel (dashboard, categories, products, sales)
-    │   ├── assets/         # CSS, JS, and media files
-    │   ├── classes/        # PHP classes (DB connection, settings)
-    │   ├── database/       # Database backup (.sql file)
-    │   ├── inc/            # Reusable includes (headers, navigation, etc.)
-    │   ├── plugins/        # JS/CSS libraries (toastr, sweetalert, etc.)
-    │   ├── uploads/        # Product and banner images
-    │   ├── config.php      # Main configuration file
-    │   ├── initialize.php  # Project constants and base URL
-    │   └── index.php       # Entry point (redirects to admin dashboard)
-    └── README.md
+```
+cscs/
+│
+├── admin/             # Admin panel files (dashboard, management modules)
+├── assets/            # CSS, JS, and image assets
+├── build/             # Compiled static assets
+├── classes/           # PHP classes for DB and logic handling
+├── database/          # SQL files and database configuration
+├── dist/              # Distribution files (optional)
+├── inc/               # Header, footer, and reusable includes
+├── libs/              # Libraries used in the project
+├── plugins/           # JS plugins or dependencies
+├── uploads/           # Uploaded images or receipts
+│
+├── 404.html           # Error page
+├── config.php         # Database connection configuration
+├── index.php          # Main landing page
+├── initialize.php     # Initialization file
+└── README.md          # Documentation file
+```
 
 ## ⚙️ Installation / Setup Instructions
 
-### 1️⃣ Install XAMPP
-- Download from: [https://www.apachefriends.org/download.html](https://www.apachefriends.org/download.html)
-- Start **Apache** and **MySQL** modules
+1. **Install XAMPP** if you haven’t already.  
+   Download from [https://www.apachefriends.org](https://www.apachefriends.org)
 
-### 2️⃣ Setup the Project Folder
-- Copy this project folder `cscs` into:
-      C:\xampp\htdocs\
-- Folder path should look like:
-      C:\xampp\htdocs\cscs\
+2. **Copy the project folder**  
+   Place the `cscs` folder inside your XAMPP `htdocs` directory:  
+   ```
+   C:\xampp\htdocs\cscs
+   ```
 
-### 3️⃣ Import the Database
-- Open your browser → go to `http://localhost/phpmyadmin/`
-- Create a new database named: `cscs_db`
-- Click **Import** → choose the file:
-      cscs/database/cscs_db.sql
-- Click **Go**
+3. **Start Apache and MySQL**  
+   Open XAMPP Control Panel → Start both **Apache** and **MySQL**.
 
-### 4️⃣ Run the Project
-Open your browser and go to:
-      http://localhost/cscs/
+4. **Create Database**
+   - Open [http://localhost/phpmyadmin](http://localhost/phpmyadmin)
+   - Create a new database named:
+     ```
+     cscs_db
+     ```
+   - Import the `.sql` file from the `database` folder.
 
-### 5️⃣ Admin Login Credentials
-- **Username:** `admin`  
-- **Password:** `admin123`
+5. **Run the Project**
+   Open your browser and visit:
+   ```
+   http://localhost/cscs/
+   ```
 
-## 🧾 Results / Outcome
+6. **Admin Login**
+   - Go to: [http://localhost/cscs/admin/](http://localhost/cscs/admin/)
+   - Enter your admin credentials (check your database or setup script for defaults).
 
-🚀 The system allows the coffee shop to:
-- Handle customer orders quickly and accurately  
-- Auto-generate total bills and update stock in real-time  
-- Reduce manual errors and speed up checkout time  
-- Maintain all transaction records digitally  
+## 🧾 Notes
 
-📊 The dashboard provides insights on total categories, products, and sales.
+- Default timezone is set to `Asia/Manila` in `config.php` (you can change it if needed).  
+- Tested on **PHP 8.0+** and **MySQL 10.4+**.  
+- Works perfectly on **localhost** using **XAMPP** (recommended).  
+- Folder name must be **cscs** for the URLs and links to work correctly.  
 
-## 🧑‍💻 Developer
+## 🏁 Results
 
-**Moulya M C**  
+✅ Successfully working Coffee Shop Cashiering System  
+🌐 Runs locally on `http://localhost/cscs/`  
+📦 All features — Admin, Products, Reports, and Billing — are functioning properly.  
 
-⭐ **If you like this project, give it a star on GitHub!**
+## 👩‍💻 Author
+
+**Moulya MC**  
+
+## ⭐ Support
+
+If you like this project, please consider giving it a **⭐ star on GitHub**  
