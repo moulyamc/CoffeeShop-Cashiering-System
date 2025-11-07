@@ -88,10 +88,12 @@ cscs/
 ## 🏁 Results
 
 🚀 The system allows the coffee shop to:
+
 - Handle customer orders quickly and accurately  
 - Auto-generate total bills and update stock in real-time  
 - Reduce manual errors and speed up checkout time  
 - Maintain all transaction records digitally
+
 📊 The dashboard provides insights on total categories, products, and sales.
  
 ## 👩‍💻 Author
