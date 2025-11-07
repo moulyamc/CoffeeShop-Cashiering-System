@@ -1,7 +1,7 @@
 # ☕ CoffeeShop Cashiering System
 
 A **web-based POS (Point of Sale)** system for managing coffee shop orders, billing, and inventory.  
-It allows admins to handle products, categories, sales, and reports efficiently — all from a browser interface.
+It allows admins to handle products, categories, sales, and reports efficiently all from a browser interface.
 
 ## 🚀 Features
 
